@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(78, 39, 155);
+    color: #ff8000;
+}
+
+h1{
+    color: #65B741;
+}
+
+.dotted-bold-divider{
+   border: 5px dashed #ff8000;
+}
+
+h2{
+    color: rgba(225, 196, 121, 0.5);
+}
