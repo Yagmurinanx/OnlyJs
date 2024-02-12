@@ -2,3 +2,10 @@
   background-image: url("https://images.pexels.com/photos/687824/pexels-photo-687824.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
 }
 
+.bg-success , .btn-success {
+  background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 233, 251) 25.8%, rgb(252, 239, 250) 50.8%, rgb(234, 251, 251) 77.6%, rgb(240, 251, 244) 100.7%) !important;
+}
+
+.bg-primary{
+  background: linear-gradient(to top, #d5dee7 0%, #ffafbd 0%, #c9ffbf 100%) !important;
+}
