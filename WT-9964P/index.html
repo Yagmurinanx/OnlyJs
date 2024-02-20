@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Storyteller</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
 
@@ -35,21 +35,10 @@
     />
   </head>
   <body>
-    <nav
-      class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm"
-      id="mainNav"
-    >
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm bg-white" id="mainNav">
       <div class="container px-5">
-        <a class="navbar-brand fw-bold" href="#page-top">Start Bootstrap</a>
-        <button
-          class="navbar-toggler collapsed"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <a class="navbar-brand fw-bold" href="#page-top">Storyteller</a>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="bi-list"></i>
         </button>
@@ -62,11 +51,7 @@
               <a class="nav-link me-lg-3" href="#download">Download</a>
             </li>
           </ul>
-          <button
-            class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0"
-            data-bs-toggle="modal"
-            data-bs-target="#feedbackModal"
-          >
+          <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#feedbackModal">
             <span class="d-flex align-items-center">
               <i class="bi-chat-text-fill me-2"></i>
               <span class="small">Send Feedback</span>
@@ -75,11 +60,46 @@
         </div>
       </div>
     </nav>
-    <header class="masthead" style="padding-top: 100px">
-      <div class="container px-5">
+    
+    <div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fs-5" id="exampleModalLabel">Feedback Form</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="feedbackForm" action="https://formsubmit.co/yumin0095@gmail.com" method="POST">
+              <div class="mb-3">
+                <label for="nameInput" class="form-label">Name</label>
+                <input type="text" name="name" class="form-control" id="nameInput" placeholder="Enter your name" required />
+              </div>
+    
+              <div class="mb-3">
+                <label for="emailInput" class="form-label">Email</label>
+                <input type="email" name="email" class="form-control" id="emailInput" placeholder="Enter your email" required />
+              </div>
+    
+              <div class="mb-3">
+                <label for="feedbackInput" class="form-label">Feedback</label>
+                <textarea class="form-control" id="feedbackInput" name="feedback" rows="4" placeholder="Enter your feedback" required></textarea>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+
+    <header class="masthead">
+      <div class="container px-5 py-5">
         <div class="row gx-5 align-items-center">
           <div class="col-lg-6">
-            <div class="mb-5 mb-lg-0 text-center text-lg-start">
+            <div class="mt-5 mb-lg-0 text-center text-lg-start">
               <h1 class="display-1 lh-1 mb-3">
                 Showcase your app beautifully.
               </h1>
@@ -98,7 +118,7 @@
                 <a href="#!">
                   <img
                     class="app-badge"
-                    src="assets/app-store-badge.svg"
+                    src="assets/google-play-badge.svg"
                     alt="..."
                   />
                 </a>
@@ -107,22 +127,187 @@
           </div>
           <div class="col-lg-6">
             <div class="masthead-device-mockup position-relative">
-             
               <div class="device-wrapper z-1">
-                <img class="img-fluid " src="assets/phone-screen.png" style="height: 30rem;  " />
+                <img
+                  id="first-img"
+                  class="img-fluid"
+                  src="assets/phone-screen.png"
+                  style="height: 30rem"
+                />
               </div>
             </div>
           </div>
         </div>
       </div>
     </header>
-     <aside class="text-center bg-gradient"></aside>
+    <aside class="text-center pt-5" id="aside1">
+      <div class="container px-5">
+        <div class="row gx-5 justify-content-center">
+          <div class="col-xl-8">
+            <div class="h2 fs-1 text-white mb-4">
+              "An intuitive solution to a common problem that we all face,
+              wrapped up in a single app!"
+            </div>
+            <img
+              class="mb-4"
+              src="https://demo.onlyjs.com/exercises/bootstrap-mobile-app/assets/img/tnw-logo.svg"
+              alt=".."
+              style="height: 3rem"
+            />
+          </div>
+        </div>
+      </div>
+    </aside>
+    <div class="container text-center align-items-center mt-5">
+      <div class="row">
+        <div class="col-md">
+          <img
+            class="img-fluid"
+            src="assets/phone-screen.png"
+            alt="..."
+            style="height: 30rem"
+          />
+        </div>
+        <div class="col-md mt-5">
+          <div class="row">
+            <div class="col-md">
+              <i class="h1 bi bi-journal m-6"></i>
+              <h3 class="font-alt">Lorem, ipsum</h3>
+              <p class="text-muted">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Expedita, consequatur.
+              </p>
+            </div>
+            <div class="col-md">
+              <i class="h1 bi bi-pencil-square m-6"></i>
+              <h3 class="font-alt">Lorem, ipsum</h3>
+              <p class="text-muted">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Expedita, consequatur.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md">
+              <i class="h1 bi bi-heart m-6"></i>
+              <h3 class="font-alt">Lorem, ipsum</h3>
+              <p class="text-muted">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Expedita, consequatur.
+              </p>
+            </div>
+            <div class="col-md">
+              <i class="h1 bi bi-piggy-bank m-6"></i>
+              <h3 class="font-alt">Lorem, ipsum</h3>
+              <p class="text-muted">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Expedita, consequatur.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <section class="bg-light">
+      <div class="container px-5">
+        <div
+          class="row gx-5 align-items-center justify-content-center justify-content-lg-between"
+        >
+          <div class="col-12 col-lg-5">
+            <h2 class="display-4 1h-1 mb-4 text-center">
+              Enter a new age of web design
+            </h2>
+            <p class="lead fw-normal text-muted mb-5 mb-lg-0">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+              eius aliquam quos necessitatibus explicabo ratione! Nam provident
+              obcaecati, unde minus alias ducimus, laboriosam harum voluptas
+              sint ab corrupti officiis ut!
+            </p>
+          </div>
+          <div class="col-sm-8 col-md-6">
+            <div class="px-5 px-sm-0">
+              <img
+                class="img-fluid rounded-circle"
+                src="https://images.pexels.com/photos/14966404/pexels-photo-14966404/free-photo-of-kent-gece-sokak-binalar.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
+    <section class="cta">
+      <div class="cta-content">
+        <div class="container px-5 py-5">
+          <h2 class="text-white display-1 lh-1 mb-4">
+            Stop waiting.
+            <br />
+            Start building.
+          </h2>
+
+          <a
+            class="btn btn-outline-light py-3 px-4 rounded-pill"
+            href="https://startbootstrap.com/theme/new-age"
+            target="_blank"
+            >Download for free</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gradient-primary-to-secondary" id="download">
+      <div class="container px-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2 class="text-white font-alt mb-4 pt-5">Get the app now!</h2>
+            <div class="row justify-content-center">
+              <div class="col-md-6 col-lg-4 mb-4">
+                <a class="app-badge-link" href="#!">
+                  <img
+                    class="app-badge"
+                    src="assets/app-store-badge.svg"
+                    alt="Download from the App Store"
+                  />
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-4 mb-4">
+                <a class="app-badge-link" href="#!">
+                  <img
+                    class="app-badge"
+                    src="assets/google-play-badge.svg"
+                    alt="Download from Google Play"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-black text-center py-5">
+      <div class="container px-5">
+        <div class="text-white-50 small">
+          <div class="mb-2">© Yağmur İNAN 2024. All Rights Reserved.</div>
+          <a href="#!">Privacy</a>
+          <span class="mx-1">·</span>
+          <a href="#!">Terms</a>
+          <span class="mx-1">·</span>
+          <a href="#!">FAQ</a>
+        </div>
+      </div>
+    </footer>
+
+   
+
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+          crossorigin="anonymous"
+        ></script>
+      </body>
+    </html>
   </body>
 </html>
