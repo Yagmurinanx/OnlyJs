@@ -2,6 +2,15 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none !important;
+}
+nav {
+  background-image: url("https://images.pexels.com/photos/4245826/pexels-photo-4245826.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 img {
   overflow-clip-margin: content-box;
   overflow: clip;
@@ -10,12 +19,7 @@ img {
 #aside1 {
   height: auto;
   width: 100%;
-  background: rgb(63, 94, 251);
-  background: radial-gradient(
-    circle,
-    rgba(63, 94, 251, 1) 18%,
-    rgba(70, 236, 252, 1) 99%
-  );
+  background: linear-gradient(to bottom right, #000000b6, rgb(32, 37, 37));
 }
 
 i.h1 {
@@ -34,8 +38,10 @@ i.h1 {
 }
 
 .cta {
-  background-image: url("https://images.pexels.com/photos/1106468/pexels-photo-1106468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-image: url("https://images.pexels.com/photos/4245826/pexels-photo-4245826.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   padding-top: 2rem;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .app-badge {
@@ -43,6 +49,6 @@ i.h1 {
   width: 9.125rem;
 }
 
-#download {
-  background-color: #36918f;
+.bottom {
+  background: rgb(3, 3, 3);
 }
