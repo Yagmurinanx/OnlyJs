@@ -1,0 +1,51 @@
+#counterIndicator {
+   font-weight: bolder;
+} 
+
+body{
+   text-align: center;
+   color: rgb(8, 83, 182);
+   background-color: #313030;
+  
+}
+#cat-container {
+   width: 100%;
+   height: 100%;
+ }
+ 
+ #studyCat, #lazyCat {
+   width: 100%; 
+   height: 100%;
+ }
+ 
+ #studyCat:hover, #lazyCat:hover {
+   transform: scale(1.2);
+ }
+
+
+button {
+   
+   background-color: rgb(8, 83, 182);
+   color: white;
+   padding: 10px 20px; 
+   border: none;
+   border-radius: 5px; 
+   cursor: pointer; 
+   transition: background-color 0.2s ease-in-out; 
+   font-size: larger;
+   outline: none; 
+ }
+ 
+ button:hover {
+   background-color: rgb(0, 68, 128); 
+ }
+
+ iframe {
+  
+
+   
+   @media (max-width: 768px) {
+     height: auto;
+     width: auto;
+   }
+ }
