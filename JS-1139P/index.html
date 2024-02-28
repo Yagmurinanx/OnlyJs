@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skor</title>
+    <link rel="shortcut icon" href="assets/pen.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h2 id="teamAName">Takım A</h2>
+      <div class="score-container"></div>
+      <button onclick="updateTeamName('Team A')">
+        <img src="assets/pen.png" alt="." />
+      </button>
+      <label for="scoreA">Skor:</label>
+      <input type="text" id="scoreA" value="0" />
+      <br />
+
+      <button
+        onclick="updateTeamGoals('Team A', 'assign', prompt('Takım A için yeni skor girin:'))"
+      >
+        Skor Gir
+      </button>
+      <div class="button-container">
+      <button onclick="updateTeamGoals('Team A', 'increase', 1)">
+        <img src="assets/add.png" alt="." />
+      </button>
+      <button onclick="updateTeamGoals('Team A', 'decrease', 1)">
+        <img src="assets/minus.png" alt="." />
+      </button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2 id="teamBName">Takım B</h2>
+      <button onclick="updateTeamName('Team B')">
+        <img src="assets/pen.png" alt="." />
+      </button>
+      <label for="scoreB">Skor:</label>
+      <input type="text" id="scoreB" value="0" />
+      <br />
+
+      <button
+        onclick="updateTeamGoals('Team B', 'assign', prompt('Takım B için yeni skor girin:'))"
+      >
+        Skor Gir
+      </button>
+      <div class="button-container">
+      <button onclick="updateTeamGoals('Team B', 'increase', 1)">
+        <img src="assets/add.png" alt="." />
+      </button>
+      <button onclick="updateTeamGoals('Team B', 'decrease', 1)">
+        <img src="assets/minus.png" alt="." />
+      </button>
+    </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
