@@ -1,0 +1,32 @@
+#main-container {
+  background-image: url("https://images.pexels.com/photos/1694000/pexels-photo-1694000.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+
+}
+
+.hidden {
+  display: none;
+}
+
+#renderButton {
+  margin-top: 2rem;
+  margin-left: 50%;
+  margin-bottom: 2rem;
+}
+
+#charactersContainer {
+  display: flex;
+  justify-content: center;
+}
+
+#charactersContainer .character {
+  background-color: rgba(0, 0, 0, 0.108);
+  color: rgb(3, 71, 43);
+  box-shadow: 0 0 7px 2px rgba(86, 86, 99, 0.637),
+  inset 0 0 2px 0 rgba(127, 157, 183, 0.5);
+}
